@@ -20,9 +20,11 @@ int main(){
     buzzer = 0;
     while(1){
         if (drogue_detect == 0){
-            buzzer = 1;
-            wait_us(100000);
-            //ThisThread::sleep_for(100ms);
+            for(int i = 0; i < 2; i++){
+                buzzer = 1;
+                wait_us(1000000);
+                buzzer = 0;
+            }
 
         } else {
             buzzer = 0;
