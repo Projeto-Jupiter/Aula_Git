@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 int main(){
-    for(int i=0;i<70;i++)
+    for(int i=0;i<61;i++)
         printf("%d ",i);
     
     return 0;
